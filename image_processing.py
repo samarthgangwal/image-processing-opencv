@@ -30,7 +30,7 @@ def select():
         cartoon = cv2.bitwise_and(color, color, mask=edges)
 
         cv2.imshow("Cartoon", cartoon)
-        cv2.imwrite("C://Users//samar//Desktop//Project Image//cartoon.jpeg", cartoon)
+        cv2.imwrite("C://Users// //Desktop//Project Image//cartoon.jpeg", cartoon)
 
         cv2.waitKey(0)
         cv2.destroyAllWindows()
@@ -43,7 +43,7 @@ def select():
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
         cv2.imshow('Black & White', gray)
-        cv2.imwrite("C://Users//samar//Desktop//Project Image//black&white.jpeg", gray)
+        cv2.imwrite("C://Users// //Desktop//Project Image//black&white.jpeg", gray)
 
         cv2.waitKey(0)
         cv2.destroyAllWindows()
@@ -64,7 +64,7 @@ def select():
         result.show('result.png')
 
         # Save
-        result.save("C://Users//samar//Desktop//Project Image//pixelated.jpeg")
+        result.save("C://Users// //Desktop//Project Image//pixelated.jpeg")
 
     elif selected.get() == 3:
         #Pencil Sketch
@@ -109,7 +109,7 @@ def select():
 
         img_blend = dodgeV2(img_gray, img_blur)
         cv2.imshow("pencil sketch", img_blend)
-        cv2.imwrite("C://Users//samar//Desktop//Project Image//pencil_sketch.jpeg", img_blend)
+        cv2.imwrite("C://Users// //Desktop//Project Image//pencil_sketch.jpeg", img_blend)
 
     elif selected.get() == 5:
         #Enhanced Detail
@@ -135,7 +135,7 @@ def select():
         # Show image - after applying edge enhancement filter
 
         edgeEnahnced.show()
-        edgeEnahnced.save("C://Users//samar//Desktop//Project Image//enhanced_detail.jpeg")
+        edgeEnahnced.save("C://Users// //Desktop//Project Image//enhanced_detail.jpeg")
     else:
         messagebox.showinfo('Notice', 'Please select an image')
 #tkinter
